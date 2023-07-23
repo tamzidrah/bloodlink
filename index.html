@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!----======== CSS ======== -->
     <link rel="stylesheet" href="style.css">
-   
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
    <title>Responsive Regisration Form </title>
 </head>
 <body>
@@ -21,22 +26,22 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>আবেদনকারীর নাম</label>
-                            <input type="text"name="Name" required>
+                            <input type="text" required>
                         </div>
 
                         <div class="input-field">
                             <label>রক্ত প্রয়োজনের তারিখ নির্ণয় করুন:</label>
-                            <input type="text"name="Date" required>
+                            <input type="text" namrequired>
                         </div>
 
                         <div class="input-field">
                             <label>আবেদনকারীর ইমেইল</label>
-                            <input type="text" name="Email">
+                            <input type="text">
                         </div>
 
                         <div class="input-field">
                             <label>যোগাযোগের মোবাইল নম্বর</label>
-                            <input type="number"name="Number" required>
+                            <input type="number" required>
                         </div>
 
                         <div class="input-field">
@@ -52,7 +57,7 @@
 
                         <div class="input-field">
                             <label>কত ব্যাগ রক্ত প্রয়োজন?</label>
-                            <input type="text" name="No. of Bags">
+                            <input type="text">
                         </div>
                     </div>
                 </div>
@@ -61,34 +66,34 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>হাসপাতালের নাম ও ঠিকানা</label>
-                            <input type="text" name = "Info" required>
+                            <input type="text" required>
                         </div>
 
                         <div class="input-field">
                             <label>জেলা</label>
-                            <input type="number" name = "District required>
+                            <input type="number" required>
                         </div>
 
                         <div class="input-field">
                             <label>রোগীর সাথে আবেদনকারী সম্পর্ক</label>
-                            <input type="text" name= "Relation">
+                            <input type="text">
                         </div>
 
                         <div class="input-field">
                             <label>অন্যান্য তথ্য (ঐচ্ছিক)</label>
-                          <input type="text" name = "Additional">
+                          <input type="text">
                         </div>
 
                       
                         <div class="input-field">
                             <label>ফেসবুক আইডি লিংক</label>
-                          <input type="link"name="ID">
+                          <input type="link">
                         </div>
 
                       
  <div class="input-field">
                             <label>হোয়াটস্যাপ নাম্বার</label>
-                          <input type="number"name="Whatsapp">
+                          <input type="number">
                         </div>
                            
                     <button class="nextBtn">
@@ -97,16 +102,9 @@
                     </button>
                 </div> 
             </div>
-<script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbykIX2weFb1RSthSvGVYyZv4_3xwfJ32afqnsbG_0JxscE4y5XdBMZ_faywgj75YdBO/exec'
-        const form = document.forms['product']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank you! your form is submitted successfully." ))
-            .then(() => {  window.location.reload(); })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+
     
+
+    <script src="script.js"></script>
+</body>
+</html>
