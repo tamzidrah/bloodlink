@@ -87,12 +87,12 @@ form .fields .input-field{
     margin: 4px 0;
 }
 .input-field label{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: #2e2e2e;
 }
 .input-field input, select{
-   font-family: Poppins Bold;
+    font-family: Arial;
     outline: none;
     font-size: 16px;
     font-weight: 400;
