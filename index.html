@@ -103,6 +103,21 @@
                         <span class="btnText"<a href="https://www.bloodlink.xyz">Submit</span></a>
                         <i class="uil uil-navigator"></i>
                     </button>
+
+<script>
+        // JavaScript to handle the form submission and show the message
+        document.getElementById("bloodForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            var messageContainer = document.createElement("div");
+            messageContainer.textContent = "Thanks for your submission! We'll review it & get back to you within 24 hours.";
+            messageContainer.style.fontWeight = "bold";
+            messageContainer.style.marginTop = "10px";
+            messageContainer.style.color = "#007bff"; // Blue color, you can change it to your preferred color
+            document.getElementById("bloodForm").appendChild(messageContainer);
+        });
+    </script>
+                        
+                        
                 </div> 
             </div>
 
