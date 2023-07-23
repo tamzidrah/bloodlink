@@ -22,7 +22,7 @@
         <header><h2> BloodLink Portal Form</h2><h4>উপযুক্ত তথ্য দিয়ে ফরমটি পূরণ করুন: </h4>
          </header>
 
-        <form  action="https://bloodlink.xyz" method="post">
+        <form id="bloodForm">
             <div class="form first">
                 <div class="details personal">
                   
@@ -103,27 +103,19 @@
                         <span class="btnText"<a href="https://www.bloodlink.xyz">Submit</span></a>
                         <i class="uil uil-navigator"></i>
                     </button>
+                              <div id="messageContainer"></div> <!-- Container to show the message -->
 
-<script>
-        // JavaScript to handle the form submission and show the message
+                </div> 
+            </div>
+  <script>
         document.getElementById("bloodForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default form submission
-            var messageContainer = document.createElement("div");
+            var messageContainer = document.getElementById("messageContainer");
             messageContainer.textContent = "Thanks for your submission! We'll review it & get back to you within 24 hours.";
             messageContainer.style.fontWeight = "bold";
             messageContainer.style.marginTop = "10px";
-            messageContainer.style.color = "#007bff"; // Blue color, you can change it to your preferred color
-            document.getElementById("bloodForm").appendChild(messageContainer);
+            messageContainer.style.color = "#000000"; 
         });
     </script>
-                        
-                        
-                </div> 
-            </div>
-
-
-
-          
-    <script src="script.js"></script>
 </body>
 </html>
