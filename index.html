@@ -34,7 +34,7 @@
 
                         <div class="input-field">
                             <label>রক্ত প্রয়োজনের তারিখ নির্ণয় করুন:</label>
-                            <input type="text" namrequired>
+                            <input type="text" required>
                         </div>
 
                         <div class="input-field">
@@ -51,7 +51,7 @@
                             <label>রোগীর লিঙ্গ</label>
                             <select required>
                           
-                                <option><h5>Male</h5></option>
+                            <option><h5>Male</h5></option>
                                 <option><h5>Female</h5></option>
                                 <option><h5>Others</h5></option>
                             </select>
@@ -59,7 +59,7 @@
 
                         <div class="input-field">
                             <label>কত ব্যাগ রক্ত প্রয়োজন?</label>
-                            <input type="text">
+                            <input type="number">
                         </div>
                     </div>
                 </div>
@@ -99,22 +99,25 @@
                         </div>
                            
                     <button class="nextBtn" id= "nextBtn">
-                        <span class="btnText"<a href="https://www.bloodlink.xyz">Submit</span></a>
+                        <span class="btnText">Submit</span>
                         <i class="uil uil-navigator"></i>
                     </button>
                               <div id="messageContainer"></div> <!-- Container to show the message -->
 
                 </div> 
             </div>
-  <script>
+ 
+          
+          <script>
         document.getElementById("bloodForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent default form submission
             var messageContainer = document.getElementById("messageContainer");
-            messageContainer.textContent = "Thanks for your submission! We'll review it & get back to you within 24 hours.";
+            messageContainer.textContent = "We'll get in touch, soon!";
             messageContainer.style.fontWeight = "bold";
-            messageContainer.style.marginTop = "10px";
-            messageContainer.style.color = "#000000"; 
+            messageContainer.style.marginTop = "8px";
+            messageContainer.style.color = "#0000000"; 
         });
-    </script>
+  </script>
+          
 </body>
         </html>
