@@ -102,6 +102,8 @@ form .fields .input-field{
     padding: 0 15px;
     height: 42px;
     margin: 8px 0;
+    margin-left: 8px 0;
+
 }
 .input-field input :focus,
 .input-field select:focus{
